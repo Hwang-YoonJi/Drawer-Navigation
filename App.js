@@ -1,49 +1,44 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-function HomeScreen({ navigation }) {
+function HomeScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>홈</Text>
-      <Button onPress={() => navigation.navigate('설정')} title="Go to Setting" />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#e6ceff' }}>
+      <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Home Screen</Text>
     </View>
   );
 }
 
-function MembershipScreen({ navigation }) {
+function MembershipScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>멤버십</Text>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#e6ceff' }}>
+      <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Membership Screen</Text>
     </View>
   );
 }
 
-function MyPageScreen({ navigation }) {
+function MyPageScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>마이페이지</Text>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#e6ceff' }}>
+      <Text style={{ fontSize: 30, fontWeight: 'bold' }}>MyPage Screen</Text>
     </View>
   );
 }
 
-function CustomerServiceScreen({ navigation }) {
+function CustomerServiceScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>고객센터</Text>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#e6ceff' }}>
+      <Text style={{ fontSize: 30, fontWeight: 'bold' }}>CustomerService Screen</Text>
     </View>
   );
 }
 
-function SettingScreen({ navigation }) {
+function SettingScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>설정</Text>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#e6ceff' }}>
+      <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Setting Screen</Text>
     </View>
   );
 }
@@ -53,7 +48,7 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator drawerContentOptions={{activeTintColor: '#673ab7'}} initialRouteName="Home">
         <Drawer.Screen name="홈" component={HomeScreen} />
         <Drawer.Screen name="멤버십" component={MembershipScreen} />
         <Drawer.Screen name="마이페이지" component={MyPageScreen} />
