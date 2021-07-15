@@ -3,12 +3,12 @@ Drawer Navigation Study :)
 
 ## Demo
 
-<img src="https://user-images.githubusercontent.com/63582123/125731014-e006c262-0e3e-457f-8c8d-adf0be37904d.jpeg" width="347" height="599">
-<img src="https://user-images.githubusercontent.com/63582123/125731042-ae3edf21-f1ed-45aa-9f66-607884760498.jpeg" width="347" height="599">
-<img src="https://user-images.githubusercontent.com/63582123/125731075-09a9920c-6b41-4f86-982a-e972134bcfc0.jpeg" width="347" height="599">
-<img src="https://user-images.githubusercontent.com/63582123/125731084-bdc136ad-32f2-4659-973a-cd992e976bbb.jpeg" width="347" height="599">
-<img src="https://user-images.githubusercontent.com/63582123/125731090-6751c1f9-c4a5-463d-b4ca-ba8c0a589f54.jpeg" width="347" height="599">
-<img src="https://user-images.githubusercontent.com/63582123/125731094-471a7866-17ce-4185-866c-2f0459553262.jpeg" width="347" height="599">
+<img src="https://user-images.githubusercontent.com/63582123/125738512-4891854c-e91e-4062-9145-16cb837ea83c.jpeg" width="347" height="599">
+<img src="(https://user-images.githubusercontent.com/63582123/125738516-4e7aef9f-37ab-4d85-87ca-fd5549a94e52.jpeg" width="347" height="599">
+<img src="https://user-images.githubusercontent.com/63582123/125738533-1a888977-eb83-4f12-895f-fbc84bf27b18.jpeg" width="347" height="599">
+<img src="https://user-images.githubusercontent.com/63582123/125738542-de6f2863-e31e-4ec6-8da9-59dcc94827b7.jpeg" width="347" height="599">
+<img src="https://user-images.githubusercontent.com/63582123/125738550-f084481e-d9bb-4c64-9d6c-c9d2c96ec02a.jpeg" width="347" height="599">
+<img src="https://user-images.githubusercontent.com/63582123/125738560-bff2d884-273e-4804-9bb6-44c31183ba7c.jpeg" width="347" height="599">
 
 ## Installation
 
@@ -28,7 +28,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ede7f6' }}>
       <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Home Screen</Text>
     </View>
   );
@@ -36,7 +36,7 @@ function HomeScreen() {
 
 function MembershipScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ede7f6' }}>
       <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Membership Screen</Text>
     </View>
   );
@@ -44,7 +44,7 @@ function MembershipScreen() {
 
 function MyPageScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ede7f6' }}>
       <Text style={{ fontSize: 30, fontWeight: 'bold' }}>MyPage Screen</Text>
     </View>
   );
@@ -52,7 +52,7 @@ function MyPageScreen() {
 
 function CustomerServiceScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ede7f6' }}>
       <Text style={{ fontSize: 30, fontWeight: 'bold' }}>CustomerService Screen</Text>
     </View>
   );
@@ -60,7 +60,7 @@ function CustomerServiceScreen() {
 
 function SettingScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffcdd2' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ede7f6' }}>
       <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Setting Screen</Text>
     </View>
   );
@@ -71,7 +71,7 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator drawerContentOptions={{activeTintColor: '#673ab7'}} initialRouteName="Home" 
+      <Drawer.Navigator drawerContentOptions={{activeTintColor: '#673ab7', backgroundColor: '#ede7f6'}} initialRouteName="Home" 
         screenOptions={{headerShown: true, headerStyle:{backgroundColor: '#e6ceff'}, headerTintColor: '#673ab7' }} >
         <Drawer.Screen name="홈" component={HomeScreen} />
         <Drawer.Screen name="멤버십" component={MembershipScreen} />
